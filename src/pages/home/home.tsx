@@ -1,7 +1,13 @@
-import Welcome from "@components/welcome/welcome";
+import Hero from "../../components/hero/Hero";
+import SignupForm from "../../components/signup/SignupForm";
 
 function Home() {
-  return <Welcome />;
+  return (
+    <main>
+      <Hero />
+      <SignupForm />
+    </main>
+  );
 }
 
 export default Home;
