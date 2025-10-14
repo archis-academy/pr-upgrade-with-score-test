@@ -1,6 +1,8 @@
+@import '../../styles/variables';
+
 .hero {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: white;
+  background: linear-gradient(to right, $primary-gradient-start, $primary-gradient-end);
+  color: $text-light;
   padding: 4rem 1rem;
   text-align: center;
 
@@ -16,8 +18,8 @@
   }
 
   &__cta {
-    background-color: #ffc107;
-    color: #333;
+    background-color: $cta-background;
+    color: $text-dark;
     border: none;
     padding: 0.8rem 2rem;
     font-size: 1rem;
@@ -27,7 +29,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #ffca2c;
+      background-color: $cta-hover-background;
     }
   }
 }
