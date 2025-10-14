@@ -69,7 +69,11 @@ const SignupForm = forwardRef<HTMLElement>((_props, ref) => {
             Sign Up
           </button>
         </form>
-        {emailError && <p id="email-error" className="signup-form__error">{emailError}</p>}
+        {emailError && (
+          <p id="email-error" className="signup-form__error">
+            {emailError}
+          </p>
+        )}
         {message && <p>{message}</p>}
       </div>
     </section>

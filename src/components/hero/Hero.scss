@@ -1,7 +1,11 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .hero {
-  background: linear-gradient(to right, $primary-gradient-start, $primary-gradient-end);
+  background: linear-gradient(
+    to right,
+    $primary-gradient-start,
+    $primary-gradient-end
+  );
   color: $text-light;
   padding: 4rem 1rem;
   text-align: center;
