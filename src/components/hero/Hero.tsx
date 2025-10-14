@@ -1,13 +1,10 @@
 import "./Hero.scss";
 
-const Hero = () => {
-  const handleCtaClick = () => {
-    //   TODO: Backend Integration
-    document
-      .getElementById("signup-form")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
+interface HeroProps {
+  onCtaClick: () => void;
+}
 
+const Hero = ({ onCtaClick }: HeroProps) => {
   return (
     <section className="hero">
       <div className="container">
@@ -16,7 +13,7 @@ const Hero = () => {
           Discover the next generation of innovation. Sign up for exclusive
           updates!
         </p>
-        <button className="hero__cta" onClick={handleCtaClick}>
+        <button className="hero__cta" onClick={onCtaClick}>
           Learn More & Sign Up
         </button>
       </div>
