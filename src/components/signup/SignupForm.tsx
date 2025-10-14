@@ -1,15 +1,11 @@
 import React, { useState, forwardRef } from "react";
+import isEmail from "validator/lib/isEmail";
 import "./SignupForm.scss";
 
 const SignupForm = forwardRef<HTMLElement>((_props, ref) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [emailError, setEmailError] = useState("");
-
-  const validateEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,7 +17,7 @@ const SignupForm = forwardRef<HTMLElement>((_props, ref) => {
       return;
     }
 
-    if (!validateEmail(email)) {
+    if (!isEmail(email)) {
       setEmailError("Please enter a valid email address.");
       return;
     }
