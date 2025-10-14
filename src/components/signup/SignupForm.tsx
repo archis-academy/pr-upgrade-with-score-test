@@ -37,7 +37,11 @@ const SignupForm = forwardRef<HTMLElement>((_props, ref) => {
       <div className="container">
         <h2 className="signup-form__title">Be the First to Know</h2>
         <form className="signup-form__form" onSubmit={handleSubmit}>
+          <label htmlFor="email-input" className="visually-hidden">
+            Enter your email
+          </label>
           <input
+            id="email-input"
             type="email"
             className="signup-form__input"
             placeholder="Enter your email"
