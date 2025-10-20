@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Hero from "../../components/hero/Hero";
 import SignupForm from "../../components/signup/SignupForm";
+import Footer from "@/components/Footer/Footer";
 
 function Home() {
   const signupFormRef = useRef<HTMLElement>(null);
@@ -18,6 +19,7 @@ function Home() {
         ctaText="Learn More & Sign Up"
       />
       <SignupForm ref={signupFormRef} />
+      <Footer />
     </main>
   );
 }
