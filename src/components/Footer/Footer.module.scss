@@ -1,5 +1,7 @@
+@import "../../styles/variables";
+
 .footerIcon {
-  color: #e91e63;
+  color: $icon-color;
   vertical-align: middle;
   transition: transform 0.2s ease-in-out;
 
