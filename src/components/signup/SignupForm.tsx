@@ -58,6 +58,7 @@ const SignupForm = forwardRef<HTMLElement>((_props, ref) => {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            aria-describedby="email-error"
             required
           />
           <button type="submit" className="signup-form__button">

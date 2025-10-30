@@ -16,6 +16,12 @@
   background-color: $background-light;
   text-align: center;
 
+  #email-error {
+    color: $text-red;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+
   &__title {
     font-size: 2rem;
     margin-bottom: 1rem;
