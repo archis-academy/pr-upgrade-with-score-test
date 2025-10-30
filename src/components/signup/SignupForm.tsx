@@ -21,26 +21,6 @@ const SignupForm = forwardRef<HTMLElement>((_props, ref) => {
       setEmailError("Please enter a valid email address.");
       return;
     }
-
-    try {
-      // TODO: Backend Integration. Example API call:
-      // const response = await fetch('/api/signup', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email }),
-      // });
-      // if (!response.ok) {
-      //   throw new Error('Network response was not ok.');
-      // }
-
-      // On successful submission:
-      setMessage(`Thank you for signing up, ${email}!`);
-      setEmail("");
-    } catch (error) {
-      // On failed submission:
-      setMessage("Signup failed. Please try again later.");
-      console.error("Signup error:", error);
-    }
   };
 
   return (
