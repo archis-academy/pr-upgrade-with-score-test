@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import Footer from "@/components/Footer/Footer";
 import SignupForm from "@/components/signup/SignupForm";
 import Hero from "@/components/hero/Hero";
 
@@ -19,7 +18,6 @@ function Home() {
         ctaText="Learn More & Sign Up"
       />
       <SignupForm ref={signupFormRef} />
-      <Footer />
     </main>
   );
 }
