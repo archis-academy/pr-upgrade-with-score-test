@@ -8,6 +8,20 @@
 $white: #ffffff;
 $black: #000000;
 
+$primary-gradient-start: #6a11cb;
+$primary-gradient-end: #2575fc;
+
+$cta-background: #ffc107;
+$cta-hover-background: #ffca2c;
+
+$text-light: white;
+$text-dark: #333;
+$text-red: #d93025;
+
+$background-light: #ffffff;
+$border-color: #ccc;
+$primary-color-hover: #1a5cbf;
+
 /*
  * Typography and font sizes
  *
@@ -36,5 +50,5 @@ $tablet-l: pxToRem(992);
 $tablet-m: pxToRem(768);
 $tablet-s: pxToRem(640);
 $mobile-l: pxToRem(576);
-$mobile-m: pxTotRem(480);
+$mobile-m: pxToRem(480);
 $mobile-s: pxToRem(320);
