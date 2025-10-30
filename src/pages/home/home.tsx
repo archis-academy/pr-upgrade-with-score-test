@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import Hero from "../../components/hero/Hero";
-import SignupForm from "../../components/signup/SignupForm";
 import Footer from "@/components/Footer/Footer";
+import SignupForm from "@/components/signup/SignupForm";
+import Hero from "@/components/hero/Hero";
 
 function Home() {
   const signupFormRef = useRef<HTMLElement>(null);
